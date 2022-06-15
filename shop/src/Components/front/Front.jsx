@@ -7,6 +7,7 @@ import '../../front.scss'
 import productsReducer from '../../Reducers/productsReducer';
 import Loader from './Loader';
 import Products from './Products';
+import SecondBar from './SecondBar';
 import TopBar from './TopBar';
 
 
@@ -22,10 +23,11 @@ function Front() {
   }, [])
 
   return (
-    <FrontContext.Provider value = {{products}}>
+    <FrontContext.Provider value = {{products, dispatchProducts}}>
     <div id ="shop">
       <div className="shop-container">
         <TopBar/>
+        <SecondBar/>
         {
           products !== null ? <Products></Products> : <Loader></Loader>
         }
