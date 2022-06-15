@@ -7,7 +7,7 @@ function ProductLine ({product}) {
     const {setModalProductData} = useContext(BackContext);
 
     return (
-          <li className="list-group-item">
+        <li className="list-group-item">
             <div className="product-line">
                 <div className="product-line__content">
                     <div className="product-line__content__top">
@@ -23,6 +23,9 @@ function ProductLine ({product}) {
                     </div>
                     <div className="product-line__content__bottom">
                         {product.description}
+                    </div>
+                    <div className="product-line__content__photo">
+                        {product.photo ? <img src = {product.photo} alt={product.title}></img> : null}
                     </div>
                 </div>
                 <div className="product-line__buttons">

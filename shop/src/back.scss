@@ -39,6 +39,10 @@ h2 {
     width: 48px;
     height: 48px;
     color: skyblue;
+    &.front {
+        width:148px;
+        height: 148px;
+    }
 }
 
 .loader:before,
@@ -124,6 +128,14 @@ h2 {
             letter-spacing: 0.5px;
             text-align: justify;
         }
+        &__photo {
+            padding-top: 15px;
+            img {
+            height: auto;
+            max-height: 300px;
+            width: 100%;
+            }
+        }
     }
     &__buttons {
         gap: 20px;
@@ -150,6 +162,22 @@ h2 {
 .modal {
     display: block;
     background-color: rgba($color: #616568, $alpha: 0.551);
+}
+
+.edit-photo {
+    img {
+        height: auto;
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
+
+.preview {
+    img {
+        height: auto;
+        max-height: 150px;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
