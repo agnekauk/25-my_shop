@@ -16,7 +16,6 @@ This project is for **educational** porpuses only. Pull request are welcome, but
 -   **_Nodejs_**
 -   **_CSS_**
 -   **_Bootstrap_**
--   **_Responsive design_**
 -   **_CRUD_**
 -   **_MySQL_**
 
