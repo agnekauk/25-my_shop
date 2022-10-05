@@ -1,6 +1,32 @@
+![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
+![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
+![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
+
+# ONLINE-SHOP
+
+_32 group website project_
+
+This project is for **educational** porpuses only. Pull request are welcome, but priority for project authors! **_Thank you for your cooperation!_**
+
+## Project features
+
+-   **REACT**
+-   **_Javascript_**
+-   **_Nodejs_**
+-   **_CSS_**
+-   **_Bootstrap_**
+-   **_Responsive design_**
+-   **_CRUD_**
+-   **_MySQL_**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Server
+
+Database is placed on phpMyAdmin (MySQL).
 
 ## Available Scripts
 
@@ -13,6 +39,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+Also 'npm start' is required in "shop-server" integrated terminal (to start connection to the server).
 
 ### `npm test`
 
@@ -68,3 +96,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#### Authors
+
+Agne: [Github](https://github.com/agnekauk)
