@@ -31,6 +31,9 @@
             }
         }
         .bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             .sort {
                 margin: 20px;
                 padding: 25px;
@@ -41,6 +44,21 @@
                 span {
                     margin-right: 6px;
                     color: darkmagenta;
+                }
+                .range {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    i {
+                        margin-right: 15px;
+                        width: 80px;
+                    }
+                    b {
+                        padding: 0 4px;
+                    }
+                    .max{
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }
