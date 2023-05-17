@@ -5,10 +5,6 @@
     justify-content: flex-start;
     align-items: center;
 
-    h1 {
-        color: darkmagenta;
-    }
-
     .shop-container {
         width: 100%;
         display: flex;
@@ -23,27 +19,32 @@
             align-items: flex-start;
             justify-content: space-between;
             padding-top: 20px;
-            border-bottom: 5px solid darkmagenta;
+            // border-bottom: 10px solid #E0144C;
             height: 100px;
+            background-color: #9A1663;
 
             &__left {
                 padding-left: 20px;
             }
         }
         .bar {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            background-color: #E0144C;
             .sort {
+                background-color: white;
                 margin: 20px;
                 padding: 25px;
-                border: 1px solid gray;
+                border: 3px solid white;
+                border-radius: 5px;
                 select {
                     outline: none;
                 }
                 span {
                     margin-right: 6px;
-                    color: darkmagenta;
+                    color: #FF5858;
                 }
                 .range {
                     display: flex;
@@ -65,12 +66,12 @@
 
         .products {
             width: 100%;
+            background-color: #E0144C;
             display: flex;
             align-items: flex-start;
             justify-content: center;
             flex-wrap: wrap;
             padding: 20px 30px;
-            border-bottom: 5px solid darkmagenta;
             min-height: calc(100vh - 100px);
         }
 
@@ -79,9 +80,11 @@
 
             &__bin {
                 width: 400px;
+                background-color: white;
                 height: 350px;
-                border: 1px solid skyblue;
-                padding: 10px;
+                border: 3px solid white;
+                border-radius: 5px;
+                padding: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -92,7 +95,7 @@
                         align-items: center;
                         justify-content: space-between;
                         h2 {
-                            color: skyblue;
+                            color: #E0144C;
                         }
                 }
                 &__mid {
@@ -130,21 +133,21 @@
                     justify-content: space-between;
                     span {
                         font-size: 28px;
-                        color: darkmagenta;
+                        color: #FF5858;
                     }
                     button {
                         border: 3px solid;
                         outline: none;
-                        background-color: darkmagenta;
+                        background-color: #FF97C1;
                         color: white;
                         font-size: 28px;
                         letter-spacing: 1px;
                         border-radius: 5px;
                         transition: all 0.3s;
                         &:hover {
-                            color: darkmagenta;
+                            color: #FF97C1;
                             background-color: white;
-                            border: 3px solid darkmagenta;
+                            border: 3px solid #FF97C1;
                         }
                     }
                     input {

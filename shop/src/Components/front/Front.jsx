@@ -40,7 +40,7 @@ function Front() {
       }
     }>
     <div id ="shop">
-      <div className="shop-container">
+      <div className="shop-container container">
         <TopBar/>
         <SecondBar/>
         {

@@ -42,8 +42,8 @@ function SecondBar () {
     }, [showPhoto, dispatchProducts])
 
     return (
-        <div className="bar">
-            <div className="sort">
+        <div className="bar row">
+            <div className="sort col-sm">
                 <span>Rūšiuoti pagal: </span>
                <select value = {select} onChange={e => setSelect(e.target.value)}>
                 <option value="default_sort">Numatytasis</option>
@@ -52,7 +52,7 @@ function SecondBar () {
                 <option value="title_sort">Pagal pavadinimą</option>
                </select>
             </div>
-            <div className="sort">
+            <div className="sort col-sm">
                 <span>Filtruoti pagal: </span>
                 <div>
                     <div className="range">
@@ -67,9 +67,9 @@ function SecondBar () {
                     </div>
                 </div>
             </div>
-            <div className="sort">
+            <div className="sort col-sm">
                 <span>Tik su nuotraukomis: </span>
-                <input type="checkbox" onChange={() => setShowPhoto(p => !p)} checked={showPhoto} />
+                <input type="checkbox" value="photo" onChange={() => setShowPhoto(p => !p)} checked={showPhoto} />
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ function Products () {
     const {products} = useContext(FrontContext);
 
     return (
-        <div className="products">
+        <div className="products row">
             {
             products.map(p => filterShow(p.show) ? <Product key = {p.id} product ={p}></Product> :null)
             }
