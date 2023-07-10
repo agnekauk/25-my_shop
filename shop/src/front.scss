@@ -1,3 +1,5 @@
+$layout-breakpoint-small: 475px;
+$layout-breakpoint-x-small: 375px;
 #shop {
     width: 100%;
     display: flex;
@@ -19,8 +21,8 @@
             align-items: flex-start;
             justify-content: space-between;
             padding-top: 20px;
-            // border-bottom: 10px solid #E0144C;
-            height: 100px;
+            border-radius: 5px;
+            min-height: 100px;
             background-color: #9A1663;
 
             &__left {
@@ -31,12 +33,13 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            background-color: #E0144C;
+            justify-content:flex-start;
+            background-color: white;
+            font-size: 15px;
             .sort {
                 background-color: white;
-                margin: 20px;
-                padding: 25px;
+                margin: 5px;
+                padding: 10px;
                 border: 3px solid white;
                 border-radius: 5px;
                 select {
@@ -51,8 +54,8 @@
                     align-items: center;
                     justify-content: flex-start;
                     i {
-                        margin-right: 15px;
-                        width: 80px;
+                        margin-right: 10px;
+                        width: 52px;
                     }
                     b {
                         padding: 0 4px;
@@ -73,6 +76,7 @@
             flex-wrap: wrap;
             padding: 20px 30px;
             min-height: calc(100vh - 100px);
+            border-radius: 5px;
         }
 
         .product {
@@ -89,13 +93,27 @@
                 align-items: center;
                 justify-content: space-between;
                 flex-direction: column;
+                @media(max-width: $layout-breakpoint-small){
+                    width: 310px;
+                    height: 380px;
+                }
+                @media(max-width: $layout-breakpoint-x-small) {
+                    width: 260px;
+                    height: 400px;
+                }
                 &__top {
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        @media(max-width: $layout-breakpoint-small) {
+                                font-size: 13px;
+                            }
                         h2 {
-                            color: #E0144C;
+                            color: #FF5858;
+                            @media(max-width: $layout-breakpoint-small){
+                                font-size: 20px;
+                            }
                         }
                 }
                 &__mid {
@@ -131,16 +149,15 @@
                     display: flex;
                     align-items: flex-end;
                     justify-content: space-between;
+                    font-size: 28px;
                     span {
-                        font-size: 28px;
-                        color: #FF5858;
+                        color: #9A1663;
                     }
                     button {
                         border: 3px solid;
                         outline: none;
                         background-color: #FF97C1;
                         color: white;
-                        font-size: 28px;
                         letter-spacing: 1px;
                         border-radius: 5px;
                         transition: all 0.3s;
@@ -151,12 +168,17 @@
                         }
                     }
                     input {
-                        font-size: 28px;
                         letter-spacing: 1px;
                         border-radius: 5px;
                         width: 60px;
                         text-align: center;
                         margin-right: 10px;
+                    }
+                    @media(max-width: $layout-breakpoint-small) {
+                        font-size: 20px;
+                    }
+                    @media(max-width: $layout-breakpoint-x-small) {
+                        font-size: 18px;
                     }
                 }
             }
