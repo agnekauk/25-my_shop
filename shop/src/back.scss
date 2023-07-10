@@ -17,10 +17,6 @@ $fu: 'Ubuntu Mono', monospace;
     color: gray;
 }
 
-// h1 {
-//     color: crimson;
-// }
-
 h2 {
     font-size: 25px;
 }
@@ -83,9 +79,22 @@ h2 {
     }
 }
 
+.bg-special-color {
+    background-color: #e0144c;
+}
+
+.navbar {
+    background-color: #9A1663;
+    color: white;
+}
+.header-color {
+    background-color: #9A1663;
+    color: white;
+}
+
 .product-line {
     display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
@@ -107,7 +116,7 @@ h2 {
 
             &__title {
                 font-size: 14px;
-                color: darkslategrey;
+                color: #FF5858;
             }
             &__price {
                 font-style: italic;

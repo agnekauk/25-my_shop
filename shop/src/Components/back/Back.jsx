@@ -66,7 +66,7 @@ function Back() {
             modalProductData,
             setModalProductData,
             setEditProductData}}>
-            <div className="container">
+            <div className="container bg-special-color">
                 <div className="row">
                     <NavBar></NavBar>
                     <ProductCreate></ProductCreate>

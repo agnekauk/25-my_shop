@@ -56,7 +56,7 @@ function ProductCreate () {
     return (
         <div className="col-5">
             <div className="card mt-4">
-                <div className="card-header">
+                <div className="card-header header-color">
                     <h2>Naujas Produktas</h2>
                 </div>
                 <div className="card-body">
