@@ -73,6 +73,12 @@ h2 {
     font-size: 12px;
 }
 
+
+.menu-item{
+    list-style: none;
+    text-transform: uppercase;
+}
+
 @keyframes rotate {
     0% {
         transform: translate(-50%, -50%) rotateZ(0deg);
