@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useState, useContext } from "react";
+import { useEffect } from "react";
 import BackContext from "../../Contexts/BackContexts";
 import getBase64 from "../../Functions/getBase64";
 
@@ -53,8 +54,17 @@ function ProductCreate () {
         }
     }
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+        const ismobile = window.innerWidth < 769;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+    }, false);
+    }, [isMobile]);
+
     return (
-        <div className="col-5">
+        <div className={`${isMobile ? "col-12" : "col-5"}`}>
             <div className="card mt-4">
                 <div className="card-header header-color">
                     <h2>Naujas Produktas</h2>
@@ -87,8 +97,8 @@ function ProductCreate () {
                                 </div>
                             </div>
                             <div className="col-12 row">
-                                <div className="form-group col-8">
-                                    <input type="file" ref = {fileInput} onChange = {newPhoto} className="form-control fu"/>
+                                <div className="form-group col-12">
+                                    <input type="file" ref = {fileInput} onChange = {newPhoto} className="form-control fu fs-customized"/>
                                     <label className="photo-label fu">Pasirinkite nuotrauką</label>
                                 </div>
                                 <div className="col-4">
