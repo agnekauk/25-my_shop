@@ -2,7 +2,7 @@ function NavBar() {
 
     return (
         <div className="col-12">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <a className="navbar-brand"  href="/">My Shop</a>
             <button className="navbar-toggler" type="button">
                 <span className="navbar-toggler-icon"></span>

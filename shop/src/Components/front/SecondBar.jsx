@@ -52,7 +52,7 @@ function SecondBar () {
                 <option value="title_sort">Pagal pavadinimą</option>
                </select>
             </div>
-            <div className="sort col-sm">
+            <div className="sort col-sm max-min">
                 <span>Filtruoti pagal: </span>
                 <div>
                     <div className="range">

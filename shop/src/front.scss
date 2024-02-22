@@ -36,7 +36,13 @@ $layout-breakpoint-x-small: 375px;
             justify-content:flex-start;
             background-color: white;
             font-size: 15px;
+            @media(max-width:$layout-breakpoint-small) {
+                font-size: 12px;
+            }
             .sort {
+                display: flex;
+                justify-content: center;
+                width: 90%;
                 background-color: white;
                 margin: 5px;
                 padding: 10px;
@@ -63,6 +69,12 @@ $layout-breakpoint-x-small: 375px;
                     .max{
                         transform: rotate(180deg);
                     }
+                }
+            }
+            .max-min {
+                @media (max-width: $layout-breakpoint-x-small) {
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
