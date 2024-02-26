@@ -1,7 +1,7 @@
 function DropDownMenu() { 
 
     return (
-            <div className="container dropdown justify-content-end p-3">
+            <div className="block dropdown p-2">
                     <ul className="menu">
                         <li className="menu-item">Home</li>
                         <li className="menu-item">Features</li>
