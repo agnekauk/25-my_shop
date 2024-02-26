@@ -73,6 +73,29 @@ h2 {
     font-size: 12px;
 }
 
+.dropdown {
+    width: 50%;
+    margin-left: 50%;
+ }
+
+ .menu {
+    width: 100%;
+ }
+
+.menu-item{
+    list-style: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    text-align: center;
+    border: 0.25px solid white;
+}
+
+.menu-item:hover {
+    background-color: white;
+    color: #9A1663;
+    cursor: pointer;
+}
+
 @keyframes rotate {
     0% {
         transform: translate(-50%, -50%) rotateZ(0deg);
@@ -90,7 +113,13 @@ h2 {
 .navbar {
     background-color: #9A1663;
     color: white;
+    flex-wrap: wrap;
 }
+
+.navbar-brand {
+    width: 70%;
+}
+
 .header-color {
     background-color: #9A1663;
     color: white;
@@ -204,6 +233,18 @@ h2 {
     .product-line{
         flex-direction: column;
         } 
+}
+@media (max-width: 768px) {
+    .dropdown {
+            width: 60%;
+            margin-left: 40%;
+        }
+}
+@media (max-width: 440px) {
+    .dropdown {
+            width: 100%;
+            margin-left: 0%;
+        }
 }
 
 @keyframes rotateccw {
